@@ -1,0 +1,38 @@
+file=open("tops1.txt","w")
+file.write("This is file management demo using python.")
+file.close()
+print("file Written Successfully")
+print("------------------------------------------------------------------")
+
+file=open("tops1.txt","r")
+print(file.read())
+file.close()
+print("----------------------------------------------------------------")
+
+file=open("tops1.txt","a")
+file.write("\nThis is file is now appended")
+file.close()
+print("file Appended Successfully")
+print("------------------------------------------------------------------")
+
+
+file=open("tops1.txt","r")
+print(file.read())
+file.close()
+print("----------------------------------------------------------------")
+
+file=open("tops2.txt","w+")
+file.write("This file is worked with w+ mode")
+print("Current file Position : ", file.tell())
+file.seek(0)
+print("w+ File content : ",file.read())
+file.close()
+print("----------------------------------------------------------------")
+
+file=open("tops2.txt","r+")
+file.write("This file is worked with r+ mode")
+print(file.read())
+file.seek(0)
+print("r+ File content : ",file.read())
+file.close()
+print("----------------------------------------------------------------")
