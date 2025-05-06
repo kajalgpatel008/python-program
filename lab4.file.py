@@ -1,0 +1,15 @@
+file=open("tops2.txt","w+")
+file.write("this is python file")
+print("current file position : ",file.tell())
+file.seek(0)
+print("w+ File content : ",file.read())
+file.close()
+
+file=open("tops2.txt","r+")
+file.write("This file is python")
+print(file.read())
+
+file.seek(0)
+print("r+ File content : ",file.read())
+file.close()
+print("----------------------------------------------------------------")
