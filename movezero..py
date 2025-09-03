@@ -6,7 +6,8 @@ for item in list:
 print(list)
 
 
-list=[1,0,0,2,6,4,0,0,8]
+
+list=[1,0,0,2,6,4,0,0,7]
 
 for item in list:
     if item==0:
